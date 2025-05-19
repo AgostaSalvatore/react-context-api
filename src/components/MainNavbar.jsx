@@ -12,8 +12,8 @@ const links = [
         label: 'About'
     },
     {
-        path: '/products',
-        label: 'Products'
+        path: '/posts',
+        label: 'Posts'
     },
     {
         path: '/contacts',
