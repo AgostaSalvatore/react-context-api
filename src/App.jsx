@@ -7,7 +7,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route Component={DefaulLayout}>
-
+            <Route path="/" Component={Homepage} />
+            <Route path="/posts" Component={Posts} />
+            <Route path="/contacts" Component={Contacts} />
+            <Route path="/aboutus" Component={About} />
           </Route>
         </Routes>
       </BrowserRouter>
