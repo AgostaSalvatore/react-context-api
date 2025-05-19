@@ -3,7 +3,7 @@ import postsData from "../data/posts";
 
 const PostsContext = createContext([]);
 
-export const PostsProvider = ({ children }) => {
+const PostsProvider = ({ children }) => {
 
     const [posts, setPosts] = useState(postsData);
 
@@ -18,4 +18,4 @@ export const PostsProvider = ({ children }) => {
 };
 
 
-export { PostsProvider };
+export { PostsContext, PostsProvider };

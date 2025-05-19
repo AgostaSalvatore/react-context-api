@@ -11,20 +11,23 @@ import About from "./pages/About"
 import Posts from "./pages/posts/Posts"
 
 //context
+import { PostsProvider } from "./contexts/PostsContext"
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route Component={DefaultLayout}>
-            <Route path="/" Component={Homepage} />
-            <Route path="/posts" Component={Posts} />
-            <Route path="/contacts" Component={Contacts} />
-            <Route path="/about" Component={About} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <PostsProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route Component={DefaultLayout}>
+              <Route path="/" Component={Homepage} />
+              <Route path="/posts" Component={Posts} />
+              <Route path="/contacts" Component={Contacts} />
+              <Route path="/about" Component={About} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </PostsProvider>
     </>
   )
 }
