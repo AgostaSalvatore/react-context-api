@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { NavLink } from 'react-router-dom'
 import posts from '../../data/posts'
 
-const Products = () => {
+const Posts = () => {
 
     return (
         <>
@@ -12,7 +12,7 @@ const Products = () => {
                     <h1>Lista prodotti</h1>
                 </div>
                 <div className="row g-3">
-                    {products === null ? (
+                    {posts === null ? (
                         <div>Loading...</div>
                     ) : (
                         posts.map((post) => {
@@ -38,4 +38,4 @@ const Products = () => {
     )
 }
 
-export default Products
+export default Posts
