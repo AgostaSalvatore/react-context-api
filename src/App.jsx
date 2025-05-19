@@ -7,6 +7,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route Component={DefaulLayout}>
+
           </Route>
         </Routes>
       </BrowserRouter>

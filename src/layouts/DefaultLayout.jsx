@@ -1,10 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import MainNavbar from '../components/MainNavbar'
 
 const DefaultLayout = () => {
     return (
         <>
             <header>
+                <MainNavbar />
             </header>
             <main>
                 <div className="container">
@@ -21,3 +23,5 @@ const DefaultLayout = () => {
         </>
     )
 }
+
+export default DefaultLayout
